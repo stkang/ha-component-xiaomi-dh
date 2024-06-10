@@ -1,0 +1,12 @@
+{
+  "domain": "xiaomi_dh",
+  "name": "샤오미 제습기",
+  "codeowners": ["@stkang90"],
+  "config_flow": true,
+  "documentation": "https://github.com/stkang/ha-component-xiaomi-dh",
+  "dependencies": [],
+  "requirements": ["construct==2.10.68", "micloud==0.5", "python-miio==0.5.12"],
+  "iot_class": "cloud_polling",
+  "version": "1.0.0",
+  "issue_tracker": "https://github.com/stkang/ha-component-xiaomi-dh/issues"
+}

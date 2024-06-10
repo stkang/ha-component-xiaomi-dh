@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "cloud": {
+        "data": {
+          "cloud_country": "Cloud server country",
+          "cloud_password": "Cloud password",
+          "cloud_username": "Cloud username",
+          "manual": "Configure manually (not recommended)"
+        },
+        "description": "Log in to the Xiaomi Miio cloud, see https://www.openhab.org/addons/bindings/miio/#country-servers for the cloud server to use."
+      },
+      "connect": {
+        "data": {
+          "model": "Device model"
+        }
+      },
+      "manual": {
+        "data": {
+          "host": "IP 주소",
+          "token": "API 토큰"
+        },
+        "description": "32자 API 토큰이 필요합니다. 자세한 내용은 https://www.home-assistant.io/integrations/xiaomi_miio#retrieving-the-access-token을 참조하세요. 이 API 토큰은 Xiaomi Aqara 통합에서 사용하는 키와 다릅니다."
+      }
+    },
+    "abort": {
+      "already_configured": "Device is already configured",
+      "already_in_progress": "Configuration flow is already in progress",
+      "incomplete_info": "Incomplete information to set up device, no host or token supplied.",
+      "not_xiaomi_miio": "Device is not (yet) supported by Xiaomi Miio.",
+      "reauth_successful": "Re-authentication was successful",
+      "unknown": "Unexpected error"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "cloud_credentials_incomplete": "Cloud credentials incomplete, please fill in username, password and country",
+      "cloud_login_error": "Could not login to Xiaomi Miio Cloud, check the credentials.",
+      "cloud_no_devices": "No devices found in this Xiaomi Miio cloud account.",
+      "unknown_device": "The device model is not known, not able to set up the device using config flow.",
+      "wrong_token": "Checksum error, wrong token"
+    }
+  }
+}
