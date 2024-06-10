@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from homeassistant.components.binary_sensor import BinarySensorDeviceClass
+from homeassistant.components.xiaomi_miio import KEY_DEVICE, KEY_COORDINATOR
 from homeassistant.components.xiaomi_miio.binary_sensor import (
     XiaomiMiioBinarySensorDescription,
     XiaomiGenericBinarySensor,
@@ -14,7 +15,6 @@ from .const import (
     ATTR_TANK_FULL,
     ATTR_DEFROST_STATUS,
 )
-from ..xiaomi_miio import KEY_DEVICE, KEY_COORDINATOR
 
 BINARY_SENSOR_TYPES = (
     XiaomiMiioBinarySensorDescription(
